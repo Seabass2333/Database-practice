@@ -18,19 +18,29 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+> create an .env file copied from .env.example
 
-## Learn More
+### MySQL
+##### database
+> aiven: https://console.aiven.io/
+> add DATABASE_URL to .env
+> change ./prisma/schema.prisma file content
+> run `npx prisma generate`
+> run `npx prisma db push`, it might be get an error something like `Can't reach database server at ...`, it's because aiven database isn't ready, just waiting a few minutes and run it again
+> run `npx prisma studio`, you will see the table of database
 
-To learn more about Next.js, take a look at the following resources:
+### PostgreSQL
+##### database
+> Neon: https://console.neon.tech/app/projects
+> change ./prisma/schema.prisma file content
+> run `npx prisma generate`
+> run `npx prisma db push`, it's much faster than aiven
+> run `npx prisma studio`, you will see the table of database, or you can edit database in the neon site directly
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### MOngoDB
+##### database 
+> MongoDB: https://cloud.mongodb.com/v2
+> change ./prisma/schema.prisma file content
+> run `npx prisma generate`
+> run `npx prisma db push`
+> run `npx prisma studio`, you will see the table of database
