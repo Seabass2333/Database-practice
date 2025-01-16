@@ -1,7 +1,13 @@
 import { db } from "@/lib/db";
 
 export default async function Home() {
-  const tasks = await db.task.findMany();
+  const tasks = await db.task.findMany({
+    where: {
+      title: {
+        contains: 'lu'
+      }
+    }
+  });
 
   return (
     <div>

@@ -3,17 +3,14 @@
 
 generator client {
   provider = "prisma-client-js"
-  previewFeatures = ["fullTextIndex", "fullTextSearch"]
 }
 
 datasource db {
-  provider = "mysql"
-  url      = env("DATABASE_URL")
+  provider  = "postgresql"
+  url  	    = env("DATABASE_URL")
+  directUrl = env("DATABASE_URL_UNPOOLED")
 }
-
 model Task {
   id        String   @id @default(uuid())
   title     String
-
-  @@fulltext([title])
 }
