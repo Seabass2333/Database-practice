@@ -51,5 +51,6 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 4. run `npx prisma db push`
 5. run `npx prisma studio`, you will see the table of database
 
+***--------------------------------------------------***
 
 **PS: please check out the details about every type of database in different branches!**
