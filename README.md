@@ -24,32 +24,32 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 ##### database
 
-> aiven: https://console.aiven.io/
-> add DATABASE_URL to .env
-> change ./prisma/schema.prisma file content
-> run `npx prisma generate`
-> run `npx prisma db push`, it might be get an error something like `Can't reach database server at ...`, it's because aiven database isn't ready, just waiting a few minutes and run it again
-> run `npx prisma studio`, you will see the table of database
+1. aiven: https://console.aiven.io/
+2. add DATABASE_URL to .env
+3. change ./prisma/schema.prisma file content
+4. run `npx prisma generate`
+5. run `npx prisma db push`, it might be get an error something like `Can't reach database server at ...`, it's because aiven database isn't ready, just waiting a few minutes and run it again
+6. run `npx prisma studio`, you will see the table of database
 
 ### PostgreSQL
 
 ##### database
 
-> Neon: https://console.neon.tech/app/projects
-> change ./prisma/schema.prisma file content
-> run `npx prisma generate`
-> run `npx prisma db push`, it's much faster than aiven
-> run `npx prisma studio`, you will see the table of database, or you can edit database in the neon site directly
+1. Neon: https://console.neon.tech/app/projects
+2. change ./prisma/schema.prisma file content
+3. run `npx prisma generate`
+4. run `npx prisma db push`, it's much faster than aiven
+5. run `npx prisma studio`, you will see the table of database, or you can edit database in the neon site directly
 
 ### MOngoDB
 
 ##### database
 
-> MongoDB: https://cloud.mongodb.com/v2
-> change ./prisma/schema.prisma file content
-> run `npx prisma generate`
-> run `npx prisma db push`
-> run `npx prisma studio`, you will see the table of database
+1. MongoDB: https://cloud.mongodb.com/v2
+2. change ./prisma/schema.prisma file content
+3. run `npx prisma generate`
+4. run `npx prisma db push`
+5. run `npx prisma studio`, you will see the table of database
 
 
-PS: please check out the details about every type of database in different branches!
+**PS: please check out the details about every type of database in different branches!**
