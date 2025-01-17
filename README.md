@@ -18,6 +18,8 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
+******
+
 > create an .env file copied from .env.example
 
 ### MySQL
@@ -51,6 +53,6 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 4. run `npx prisma db push`
 5. run `npx prisma studio`, you will see the table of database
 
-***--------------------------------------------------***
+-----------------
 
 **PS: please check out the details about every type of database in different branches!**
